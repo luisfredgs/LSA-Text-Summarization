@@ -1,13 +1,13 @@
-from lsa import LsaSummarizer
+from lsa_summarizer import LsaSummarizer
 import nltk
-nltk.download("punkt")
-nltk.download("stopwords")
+nltk.download("punkt", quiet=True)
+nltk.download("stopwords", quiet=True)
 
 from nltk.corpus import stopwords
 
 source_file = "original_text.txt"
 
-with open(source_file, "r") as file:
+with open(source_file, "r", encoding='utf-8') as file:
     text = file.readlines()
 
 

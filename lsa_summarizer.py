@@ -5,7 +5,7 @@ import numpy
 from warnings import warn
 from nltk.tokenize import sent_tokenize, word_tokenize
 from numpy.linalg import svd as singular_value_decomposition
-from abstract import BaseSummarizer
+from base_summarizer import BaseSummarizer
 import nltk
 from nltk.corpus import stopwords
 
