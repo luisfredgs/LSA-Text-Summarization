@@ -4,7 +4,6 @@ from utils import ItemsCount
 
 SentenceInfo = namedtuple("SentenceInfo", ("sentence", "order", "rating",))
 
-
 class BaseSummarizer(object):
     
     def __call__(self, document, sentences_count):
