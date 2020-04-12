@@ -1,11 +1,9 @@
-string_types = (bytes, str,)
-
 class ItemsCount(object):
     def __init__(self, value):
         self._value = value
 
     def __call__(self, sequence):
-        if isinstance(self._value, string_types):
+        if isinstance(self._value, (bytes, str,)):
             if self._value.endswith("%"):
                 total_count = len(sequence)
                 percentage = int(self._value[:-1])

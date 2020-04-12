@@ -2,11 +2,12 @@ from __future__ import absolute_import
 from __future__ import division, print_function, unicode_literals
 import math
 import numpy
+import nltk
+
 from warnings import warn
 from nltk.tokenize import sent_tokenize, word_tokenize
 from numpy.linalg import svd as singular_value_decomposition
 from base_summarizer import BaseSummarizer
-import nltk
 from nltk.corpus import stopwords
 
 class LsaSummarizer(BaseSummarizer):
